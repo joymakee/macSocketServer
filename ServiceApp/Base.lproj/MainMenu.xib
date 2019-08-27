@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -630,7 +629,7 @@
                             <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                 <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                 <connections>
-                                    <action selector="toggleSourceList:" target="-1" id="iwa-gc-5KM"/>
+                                    <action selector="toggleSidebar:" target="-1" id="iwa-gc-5KM"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -686,12 +685,12 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="737" height="479"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="737" height="479"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFO-nz-1MY">
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GFO-nz-1MY">
                         <rect key="frame" x="167" y="407" width="520" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" bezelStyle="round" id="lb0-1z-dqz">
                             <font key="font" metaFont="system"/>
@@ -702,7 +701,7 @@
                             <outlet property="delegate" destination="QvC-M9-y7g" id="qZX-bz-Oi0"/>
                         </connections>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T2-Kj-apa">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2T2-Kj-apa">
                         <rect key="frame" x="50" y="403" width="92" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="eZI-F6-K3v"/>
@@ -713,7 +712,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-a5-J0F">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-a5-J0F">
                         <rect key="frame" x="50" y="363" width="92" height="30"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" title="端口:" bezelStyle="round" id="RAv-1z-K2s">
                             <font key="font" metaFont="system"/>
@@ -721,7 +720,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-QB-SAN">
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-QB-SAN">
                         <rect key="frame" x="167" y="367" width="520" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="8088" bezelStyle="round" id="uHp-Xr-p8e">
                             <font key="font" metaFont="system"/>
@@ -732,7 +731,7 @@
                             <outlet property="delegate" destination="QvC-M9-y7g" id="x9L-Ac-uP9"/>
                         </connections>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwh-zb-zOO">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mwh-zb-zOO">
                         <rect key="frame" x="50" y="283" width="92" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="ifj-TV-Eh6"/>
@@ -743,7 +742,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3D-6z-Lrn">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P3D-6z-Lrn">
                         <rect key="frame" x="167" y="288" width="520" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Jmt-jF-9Ad"/>
@@ -754,7 +753,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7d-Ms-N5b">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f7d-Ms-N5b">
                         <rect key="frame" x="50" y="248" width="92" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="mE9-Lc-A5m"/>
@@ -778,7 +777,7 @@
                             <action selector="touchAction:" target="QvC-M9-y7g" id="epG-jB-1dF"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpf-Cs-Vlm">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Jpf-Cs-Vlm">
                         <rect key="frame" x="167" y="98" width="520" height="180"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="180" id="W6R-b4-3G6"/>
@@ -786,11 +785,11 @@
                         </constraints>
                         <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="客户端数据" drawsBackground="YES" id="OcM-Ct-KN2">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjV-gI-a6X">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TjV-gI-a6X">
                         <rect key="frame" x="50" y="323" width="92" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="2T3-Gf-7HJ"/>
@@ -801,7 +800,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obO-DH-Zdt">
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="obO-DH-Zdt">
                         <rect key="frame" x="167" y="327" width="520" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="UfD-TF-AFR"/>
@@ -819,7 +818,7 @@
                         </constraints>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="v75-Uf-6Ff"/>
                     </imageView>
-                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAD-hG-QGJ">
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vAD-hG-QGJ">
                         <rect key="frame" x="56" y="116" width="80" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="j4i-Va-Of3"/>
@@ -870,6 +869,7 @@
                     <constraint firstItem="GFO-nz-1MY" firstAttribute="leading" secondItem="2T2-Kj-apa" secondAttribute="trailing" constant="25" id="V8Y-7K-yeq"/>
                     <constraint firstItem="rgh-yE-W67" firstAttribute="top" secondItem="f7d-Ms-N5b" secondAttribute="bottom" constant="10" id="Zgc-aP-Obz"/>
                     <constraint firstItem="vAD-hG-QGJ" firstAttribute="top" secondItem="rgh-yE-W67" secondAttribute="bottom" constant="10" id="eOC-1g-QGQ"/>
+                    <constraint firstItem="UMH-67-XU7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="gRx-lO-UIv"/>
                     <constraint firstItem="vAD-hG-QGJ" firstAttribute="centerX" secondItem="rgh-yE-W67" secondAttribute="centerX" id="hgH-6b-kxZ"/>
                     <constraint firstItem="Mwh-zb-zOO" firstAttribute="top" secondItem="TjV-gI-a6X" secondAttribute="bottom" constant="10" id="lXf-sp-ZUQ"/>
                     <constraint firstItem="rgh-yE-W67" firstAttribute="leading" secondItem="2T2-Kj-apa" secondAttribute="leading" id="mOc-uY-A0g"/>

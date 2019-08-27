@@ -153,7 +153,7 @@
          address = addresses[key];
          if(address) *stop = YES;
      } ];
-    return address ? address : @"0.0.0.0";
+    return address ? :[addresses objectForKey:@"en18/ipv4"]? :@"0.0.0.0";
 }
 
 //获取所有相关IP信息
